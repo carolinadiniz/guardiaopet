@@ -1,0 +1,84 @@
+section.animal-image {
+    margin-top: 20px;
+}
+
+section.animal-info {
+    margin: 14px 20px 0px 20px;
+}
+
+h1 {
+    display: inline;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+ 
+    margin: 0;
+}
+
+
+.animal-nome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.bloco div {
+    display: block;
+    width: 50%;
+}
+
+.bloco span {
+    font-size: 14px;
+}
+
+.descricao {
+    margin-bottom: 28px;
+}
+
+.descricao span{
+    display: block;
+    margin-bottom: 6px;
+}
+
+
+.quero-adotar {
+    display: flex;
+    justify-content: center;
+    padding: 28px 22px;
+}
+
+button {
+    width: 100%;
+    height: 52px;
+    background-color: var(--color1);
+    border: 0px solid white;
+    border-radius: 9px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color2);
+    cursor: pointer;
+}
+
