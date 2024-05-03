@@ -1,17 +1,17 @@
 <div class="animal-card">
     <div class="animal-image">
-        <a href="#">
-            <img src="../../../assets/images/animal1.jpeg" alt="imagem do pet">
+        <a href="animal">
+            <img src="{{data.imageUrl}}" alt="imagem do pet">
         </a>
     </div>
     <div class="animal-mini-description">
         <div class="animal-mini-description-infos">
-            <a href="#">
-                <h2>Doggo</h2>
-                <span>São Paulo, SP</span>
+            <a href="animal">
+                <h2>{{data.nome}}</h2>
+                <span>{{data.localizacao[1]}}, {{data.localizacao[0]}}</span>
             </a>
         </div>
-        <a href="#">
+        <a href="animal">
             <img class="ico-favorite" src="../../../assets/images/favorite.png" alt="botão favorito">
         </a>
     </div>
