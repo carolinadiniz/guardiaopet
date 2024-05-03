@@ -1,54 +1,49 @@
+
 <section class="animal-image">
-    <img src="../../../assets/images/animal1.jpeg" alt="imagem do pet">
+    <img src="{{data.imageUrl}}" alt="imagem do pet">
 </section>
 
 <section class="animal-info">
     <div class="animal-nome">
-        <h1>Doggo</h1>
+        <h1>{{data.nome}}</h1>
         <img class="ico-favorite" src="../../../assets/images/favorite.png" alt="Botão favorito">
     </div>
     <div class="infos">
         <div class="bloco">
             <div>
                 <span>Local</span>
-                <p>São Paulo, SP</p>
+                <p>{{data.localizacao[1]}}, {{data.localizacao[0]}}</p>
             </div>
         </div>
         <div class="bloco">
             <div>
                 <span>Peso</span>
-                <p>15 kg</p>
+                <p>{{data.peso}} kg</p>
             </div>
             <div>
                 <span>Idade aproximada</span>
-                <p>2 anos</p>
+                <p>{{data.idade}} anos</p>
             </div>
         </div>
         <div class="bloco">
             <div>
                 <span>Espécie</span>
-                <p>Cachorro</p>
+                <p>{{data.especie}}</p>
             </div>
             <div>
                 <span>Porte</span>
-                <p>Grande</p>
+                <p>{{data.porte}}</p>
             </div>
         </div>
     </div>
     <div class="descricao">
         <span>Descrição</span>
-        <p>Doggo foi resgatado na rua, estava magrinho. Demos um bom banho, antipulga e agora está em lar temporário
-            aguardando adoção.
-            <br>
-            <br>
-            Interessados precisam enviar um vídeo da casa, com o local onde vai dormir e o portão de acesso à rua. Após
-            isso, entrevistamos.
-        </p>
+        <p>{{data.descricao}}</p>
     </div>
     <div class="tags">
         <span>Tags</span>
         <div>
-            todas as tags
+            <span>{{data.tags}}</span>
         </div>
     </div>
 </section>
