@@ -8,6 +8,7 @@ import { AnimalComponent } from './pages/animal/animal.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AnimalCardComponent } from './components/animal-card/animal-card.component';
 import { FormularioComponent } from './pages/formulario/formulario.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormularioComponent } from './pages/formulario/formulario.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
