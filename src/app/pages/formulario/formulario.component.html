@@ -1,4 +1,4 @@
-<form method="post">
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()" method="post">
     <h1>Formulário para doação</h1>
 
     <div>
@@ -7,51 +7,51 @@
             <div class="bloco">
                 <label>Fotos</label>
                 <img src="#" alt="">
-                <input type="file" name="" id="">
+                <input type="file">
             </div>
             <div class="bloco">
                 <label>Nome</label>
-                <input type="text" placeholder="Nome do seu pet">
+                <input type="text" placeholder="Nome do seu pet" formControlName="nome">
             </div>
             <div class="info-animal bloco">
                 <div>
                     <label>Idade</label>
-                    <input class="short" type="number" name="" id="" placeholder="Anos" min="0" max="120">
+                    <input class="short" type="number" placeholder="Anos" min="0" max="120" formControlName="idade">
                 </div>
                 <div>
                     <label>Peso</label>
-                    <input class="short" type="number" name="" id="" placeholder="kg" min="0" max="999">
+                    <input class="short" type="number" placeholder="kg" min="0" max="999" formControlName="peso">
                 </div>
             </div>
             <div class="info-especie bloco">
                 <div>
                     <label>Espécie</label>
-                    <select name="" id="">
+                    <select formControlName="especie" required>
                         <option value="" disabled selected>Selecione</option>
-                        <option value="">Cachorro</option>
-                        <option value="">Coelho</option>
-                        <option value="">Gato</option>
-                        <option value="">Rato</option>
+                        <option value="Cachorro">Cachorro</option>
+                        <option value="Coelho">Coelho</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Rato">Rato</option>
                     </select>
                 </div>
                 <div>
                     <label>Porte</label>
-                    <select name="" id="">
+                    <select formControlName="especie" required>
                         <option value="" disabled selected>Selecione</option>
-                        <option value="">Pequeno</option>
-                        <option value="">Médio</option>
-                        <option value="">Grande</option>
+                        <option value="Pequeno">Pequeno</option>
+                        <option value="Médio">Médio</option>
+                        <option value="Grande">Grande</option>
                     </select>
                 </div>
             </div>
 
             <div class="bloco">
                 <label>Descrição</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Escreva um pouco sobre seu pet."></textarea>
+                <textarea cols="30" rows="10" placeholder="Escreva um pouco sobre seu pet." formControlName="descricao" required></textarea>
             </div>
             <div class="bloco">
                 <label>Tags</label>
-                <input type="text" name="" id="" placeholder="Exemplo: Dócil, Calmo, Agitado etc...">
+                <input type="text" placeholder="Exemplo: Dócil, Calmo, Agitado etc..." formControlName="tags">
             </div>
         </div>
     </div>
@@ -61,7 +61,7 @@
             <div class="info-location">
                 <div class="bloco">
                     <label>Estado</label>
-                    <select name="" id="">
+                    <select formControlName="estado" required>
                         <option value="" disabled selected>Selecione</option>
                         <option value="AC">AC - Acre </option>
                         <option value="AL">AL - Alagoas </option>
@@ -94,20 +94,20 @@
                 </div>
                 <div class="bloco">
                     <label>Cidade</label>
-                    <input class="short" type="text" name="" id="" placeholder="Cidade">
+                    <input class="short" type="text" placeholder="Cidade" formControlName="cidade" required>
                 </div>
             </div>
             <div class="bloco">
                 <label>Email</label>
-                <input type="email" name="" id="" placeholder="Exemplo: example@gmail.com">
+                <input type="email" placeholder="Exemplo: example@gmail.com"  formControlName="email" required>
             </div>
             <div class="bloco">
                 <label>Telefone</label>
-                <input type="tel" name="" id="" placeholder="Exemplo: (21) 98765-4321">
+                <input type="tel" placeholder="Exemplo: (21) 98765-4321"  formControlName="telefone" required>
             </div>
             <div class="bloco">
-                <input type="submit" value="Enviar">
             </div>
         </div>
     </div>
+    <input type="submit" value="Enviar">
 </form>
