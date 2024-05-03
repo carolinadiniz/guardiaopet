@@ -1,0 +1,95 @@
+
+form {
+    padding: 30px 22px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 17px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+label {
+    display: block;
+    font-family: 'Roboto';
+    font-size: 18px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+input, select, textarea{
+    margin: 0;
+    border-radius: 9px;
+    border: 2px solid var(--color4);
+    font-family: "Roboto";
+    font-size: 18px;
+    padding: 14px 16px;
+    background-color: var(--color5);
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: var(--color3);
+}
+
+input, textarea {
+    width: 338px;
+}
+
+input.short {
+    width: 123px;
+}
+
+select {
+    width: 160px;
+}
+
+.blocos {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-animal, .info-especie, .info-location {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-animal div, .info-especie div, .info-location div {
+    display: block;
+    width: 50%;
+}
+
+textarea {
+    height: 194px;
+    background-color: var(--color5);
+    font-family: 'Roboto';
+    resize: none;
+}
+
+.bloco {
+    margin-bottom: 25px;
+}
+
+input[type="Submit"] {
+    width: 97%;
+    height: 52px;
+    background-color: var(--color1);
+    margin-top: 15px;
+    border: none;
+    border-radius: 9px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--color2);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+}

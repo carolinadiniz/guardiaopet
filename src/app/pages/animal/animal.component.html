@@ -1,0 +1,53 @@
+
+<section class="animal-image">
+    <img src="{{data.imageUrl}}" alt="imagem do pet">
+</section>
+
+<section class="animal-info">
+    <div class="animal-nome">
+        <h1>{{data.nome}}</h1>
+        <img class="ico-favorite" src="../../../assets/images/favorite.png" alt="Botão favorito">
+    </div>
+    <div class="infos">
+        <div class="bloco">
+            <div>
+                <span>Local</span>
+                <p>{{data.localizacao[1]}}, {{data.localizacao[0]}}</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <div>
+                <span>Peso</span>
+                <p>{{data.peso}} kg</p>
+            </div>
+            <div>
+                <span>Idade aproximada</span>
+                <p>{{data.idade}} anos</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <div>
+                <span>Espécie</span>
+                <p>{{data.especie}}</p>
+            </div>
+            <div>
+                <span>Porte</span>
+                <p>{{data.porte}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="descricao">
+        <span>Descrição</span>
+        <p>{{data.descricao}}</p>
+    </div>
+    <div class="tags">
+        <span>Tags</span>
+        <div>
+            <span>{{data.tags}}</span>
+        </div>
+    </div>
+</section>
+
+<div class="quero-adotar">
+    <button>Quero adotar</button>
+</div>
