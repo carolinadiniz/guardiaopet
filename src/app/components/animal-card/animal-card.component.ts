@@ -9,7 +9,7 @@ export class AnimalCardComponent{
   data = {
     "id": 0,
     "id-doador": 0,
-    "nome": "Doggo",
+    "nome": "Pandora",
     "imageUrl": "../../../assets/images/animal1.jpeg",
     "localizacao": ["RJ", "Magé"],
     "peso": 15,
@@ -21,5 +21,4 @@ export class AnimalCardComponent{
     "email": "exemplo@gmail.com",
     "telefone": "(21) 98765-4321"
   }
-
 }
